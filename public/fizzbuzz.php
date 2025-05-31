@@ -11,7 +11,7 @@ function getFizzBuzzString(int $number): string
 {
     $result = '';
 
-    if ($number % 3 === 0) {
+    if ($number % 4 === 0) {
         $result .= 'Fizz';
     }
     if ($number % 5 === 0) {
