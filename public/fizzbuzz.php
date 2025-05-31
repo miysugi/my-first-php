@@ -11,11 +11,11 @@ function getFizzBuzzString(int $number): string
 {
     $result = '';
 
-    if ($number % 4 === 0) {
+    if ($number % 3 === 0) {
         $result .= 'Fizz';
     }
     if ($number % 5 === 0) {
-        $result .= 'Buzz';
+        $result .= 'Buzz';s
     }
 
     return $result ?: (string)$number;
