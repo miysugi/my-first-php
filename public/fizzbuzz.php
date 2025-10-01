@@ -3,22 +3,17 @@
 function fizzBuzz(): void
 {
     for ($i = 1; $i <= 100; $i++) {
-        echo getFizzBuzzString($i) . "\n";
-    }
-}
+        $result = '';
 
-function getFizzBuzzString(int $number): string
-{
-    $result = '';
+        if ($i % 3 === 0) {
+            $result .= 'Fizz';
+        }
+        if ($i % 5 === 0) {
+            $result .= 'Buzz';
+        }
 
-    if ($number % 3 === 0) {
-        $result .= 'Fizz';
+        echo ($result ?: (string)$i) . "\n";
     }
-    if ($number % 5 === 0) {
-        $result .= 'Buzz';
-    }
-
-    return $result ?: (string)$number;
 }
 
 fizzBuzz();
