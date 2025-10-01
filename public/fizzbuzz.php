@@ -11,7 +11,6 @@ function fizzBuzz(): void
         if ($i % 5 === 0) {
             $result .= 'Buzz';
         }
-
         echo ($result ?: (string)$i) . "\n";
     }
 }
