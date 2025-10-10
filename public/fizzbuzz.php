@@ -14,5 +14,4 @@ function fizzBuzz(): void
         echo ($result ?: (string)$i) . "\n";
     }
 }
-
 fizzBuzz();
